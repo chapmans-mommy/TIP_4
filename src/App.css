@@ -1,0 +1,128 @@
+.app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .converter-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    color: #2d3748;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .temperature-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background: #f7fafc;
+  }
+  
+  .temperature-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .unit {
+    position: absolute;
+    right: 15px;
+    top: 42px;
+    color: #718096;
+    font-weight: 500;
+  }
+  
+  .clear-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 25px;
+  }
+  
+  .clear-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  }
+  
+  .clear-btn:active {
+    transform: translateY(0);
+  }
+  
+  .formulas {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+  
+  .formulas h3 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .formulas p {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    color: #2d3748;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  /* Адаптивность для мобильных */
+  @media (max-width: 480px) {
+    .converter-card {
+      padding: 25px;
+      margin: 10px;
+    }
+    
+    .title {
+      font-size: 24px;
+    }
+    
+    .temperature-input {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
